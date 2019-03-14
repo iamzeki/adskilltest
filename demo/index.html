@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="email=no">
+  <!-- 指定国产浏览器的渲染模式 -->
+  <meta name="renderer" content="webkit">
+  <!-- 通知IE使用其支持的最新模式渲染 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>广告屏蔽检测</title>
+</head>
+<body>
+<script src="../src/adview_pic_guanggao_gg_ads.js"></script>
+<script>
+  window.onload = function () {
+    if (typeof adSkillTest === 'undefined') {
+      // 当前站点开启广告过滤
+      alert('已开启广告过滤')
+    }
+  }
+</script>
+</body>
+</html>
